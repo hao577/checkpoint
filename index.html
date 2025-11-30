@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Lương Thế Hào</title>
+    <link rel="stylesheet" href="stylehomework.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/color/48/000000/code.png"
+      type="image/png"
+    />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Thêm Particles.js -->
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <!-- Container cho particles -->
+
+    <header>
+      <h1>👋 Portfolio của tôi</h1>
+      <p>
+        Xin chào! Mình là <strong>Lương Thế Hào</strong> – học sinh 14 tuổi đam
+        mê công nghệ, lập trình web và khám phá thế giới kỹ thuật số.
+      </p>
+      <nav>
+        <a href="#intro">Giới thiệu</a>
+        <a href="#hoc-tap">Học tập</a>
+        <a href="#diem-manh">Điểm mạnh</a>
+        <a href="#projects">Dự án</a>
+        <a href="#lien-he">Liên hệ</a>
+      </nav>
+      <button id="toggleDark">🌙</button>
+    </header>
+
+    <main>
+      <section id="intro" class="intro">
+        <h2>👤 Giới thiệu</h2>
+        <ul style="--order: 1">
+          <li><strong>Họ và tên:</strong> Lương Thế Hào</li>
+          <li><strong>Tuổi:</strong> 14</li>
+          <li><strong>Năm sinh:</strong> 05/07/2011</li>
+          <li><strong>Quê quán:</strong> TP. Hồ Chí Minh</li>
+        </ul>
+        <p>
+          Mình là một cậu bé năng động, luôn tò mò về công nghệ và thích tạo ra
+          những thứ hay ho trên web!
+        </p>
+      </section>
+
+      <section id="hoc-tap">
+        <h2>📚 Học tập</h2>
+        <ul style="--order: 2">
+          <li><strong>Trường:</strong> Nguyễn Du</li>
+          <li><strong>Lớp:</strong> 9/9</li>
+        </ul>
+        <p>
+          Mình đang học tập chăm chỉ để theo đuổi đam mê công nghệ, đặc biệt là
+          lập trình frontend với HTML, CSS và JS!
+        </p>
+      </section>
+
+      <section id="diem-manh">
+        <h2>💪 Điểm mạnh & Điểm yếu</h2>
+        <ul style="--order: 3">
+          <li><strong>Ưu điểm:</strong> Luôn học hỏi, chăm chỉ và sáng tạo</li>
+          <li>
+            <strong>Nhược điểm:</strong> Dễ mất tập trung khi chơi game 😅
+          </li>
+          <li>
+            <strong>Sở thích:</strong> Chơi game, đọc sách công nghệ, code web,
+            khám phá AI
+          </li>
+        </ul>
+        <p>Mình đang cố gắng cải thiện để trở thành developer giỏi hơn!</p>
+        <a href="#lien-he" class="btn">Kết nối với mình!</a>
+      </section>
+
+      <section id="projects">
+        <h2>🛠️ Dự án cá nhân</h2>
+        <ul style="--order: 4">
+          <li>
+            <strong>Portfolio này:</strong> Một trang web tự thiết kế với
+            animations và dark mode.
+          </li>
+          <li>
+            <strong>Game đơn giản:</strong> Sử dụng JS để tạo mini-game như
+            Tic-Tac-Toe.
+          </li>
+          <li>
+            <strong>Blog công nghệ:</strong> Đang phát triển một blog chia sẻ
+            kiến thức lập trình.
+          </li>
+        </ul>
+        <p>
+          Các dự án của mình tập trung vào việc học hỏi và áp dụng kiến thức
+          thực tế.
+        </p>
+        <a href="https://github.com/yourusername" target="_blank" class="btn"
+          >Xem GitHub</a
+        >
+      </section>
+
+      <section id="lien-he">
+        <h2>📞 Liên hệ</h2>
+        </form>
+        <ul class="social-links" style="--order: 5">
+          <li>
+            <a
+              href="mailto:luongthehao0507@gmail.com"
+              target="_blank"
+              class="btn"
+              >📧 Email</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/tony.luong.414873/"
+              target="_blank"
+              class="btn"
+              >🌐 Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/skibidinhatthegioi/"
+              target="_blank"
+              class="btn"
+              >📸 Instagram</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <button id="backToTop">⬆</button>
+
+    <footer>
+      <p>© 2025 - Thiết kế bởi Lương Thế Hào 💻 | Powered by Passion & Code</p>
+    </footer>
+
+    <script>
+      // Particles.js Config
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#00b4d8" },
+          shape: { type: "circle" },
+          opacity: { value: 0.5, random: false },
+          size: { value: 3, random: true },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#caf0f8",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 3,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true,
+          },
+          modes: {
+            repulse: { distance: 100, duration: 0.4 },
+            push: { particles_nb: 4 },
+          },
+        },
+        retina_detect: true,
+      });
+
+      // Back to Top
+      const btn = document.getElementById("backToTop");
+      window.addEventListener("scroll", () => {
+        btn.style.display = window.scrollY > 300 ? "block" : "none";
+      });
+      btn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      // Dark Mode Toggle
+      const toggleDark = document.getElementById("toggleDark");
+      toggleDark.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        toggleDark.textContent = document.body.classList.contains("dark-mode")
+          ? "☀️"
+          : "🌙";
+      });
+
+      // Smooth Scroll for Nav Links
+      document.querySelectorAll("nav a").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Contact Form Submission (Fake for Demo)
+      const form = document.getElementById("contactForm");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Tin nhắn đã gửi! Cảm ơn bạn 😊");
+        form.reset();
+      });
+
+      // Set Animation Delays for List Items
+      document.querySelectorAll("ul li").forEach((li, index) => {
+        li.style.setProperty("--order", index + 1);
+      });
+    </script>
+  </body>
+</html>
